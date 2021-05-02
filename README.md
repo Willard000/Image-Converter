@@ -213,7 +213,9 @@ BMP PNG::to_bmp() {
 
 	bmp._pixel_data = flip_scanlines(raw_pixels(), 4, bmp._width);  // raw pixel data from png fliped
 	bmp._image_size = bmp._pixel_data.size();
-	bmp._file_size = 122 + bmp._image_size; 
+	bmp._file_size = 122 + bmp._image_size;
+	
+	_file_size = bmp._file_size;  // image size
 
 	return bmp;
 }
