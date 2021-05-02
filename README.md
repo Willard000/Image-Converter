@@ -238,4 +238,4 @@ Now all we need to do is read an image file, cast it to our desired format, and 
 ```
   
 ### End Note
-This project was to learn about reading binary data from files and more a proof of concept than a finished product. This code only works for RGBA PNGs as other PNG types will certainly result in an error. Because there are a lot of different types between the file formats more work would need to be done to cleanly deal with those types. I was mainly interested in binary data, compression, and filtering. There is room for optimization when unfiltering or passing pixel data.
+This project was to learn about reading binary data from files and more a proof of concept than a finished product. This code only works for RGBA PNGs as other PNG types will certainly result in an error. Because there are a lot of differences within the individual file formats, more work would need to be done to cleanly deal with this, such as adding support for grayscale and RGB image types or different bit depths images. I was mainly interested in binary data, compression, and filtering. There is room for optimization when unfiltering or passing pixel data.
